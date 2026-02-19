@@ -1,0 +1,231 @@
+/* ===========================
+   GLOBAL
+=========================== */
+
+.cart-container {
+  width: 100%;
+  max-width: 1400px;
+  /* Match the main page width */
+  margin: 40px auto;
+  padding: 0 20px;
+  /* Match body padding for perfect alignment */
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.cart-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+/* ===========================
+   LEFT: CART ITEMS CARD
+=========================== */
+
+.cart-items-card {
+  flex: 3;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #d2d2d2;
+}
+
+/* Header + Row use IDENTICAL grid so columns line up */
+.cart-header,
+.cart-item {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+  align-items: center;
+  column-gap: 20px;
+}
+
+/* Header styles */
+.cart-header {
+  font-weight: bold;
+  padding: 15px 0;
+  border-bottom: 1px solid #d2d2d2;
+  margin-bottom: 15px;
+}
+
+/* Center the Quantity, Price, Action headings */
+.cart-header span:not(:first-child) {
+  justify-self: center;
+  text-align: center;
+}
+
+/* Keep "Products" heading left aligned */
+.cart-header span:first-child {
+  justify-self: start;
+  text-align: left;
+}
+
+/* Cart Item Row */
+.cart-item {
+  padding: 15px 0;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+/* PRODUCT COLUMN (image + text in one column) */
+.cart-product {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.cart-product img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Product text */
+.item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item-info p {
+  margin: 0;
+}
+
+.item-name {
+  font-weight: bold;
+}
+
+.item-size {
+  font-size: 14px;
+  color: #777;
+}
+
+/* ===========================
+   QUANTITY, PRICE, ACTION 
+=========================== */
+
+.cart-item>*:not(.cart-product) {
+  justify-self: center;
+}
+
+.qty-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.qty-control button {
+  border: 1px solid #ccc;
+  background: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.qty-control span {
+  width: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Price */
+.item-price {
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Delete button */
+.delete-btn {
+  width: 35px;
+  height: 35px;
+  background: url("../../images/assets/closedBin.png") center/contain no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: url("../../images/assets/openBin.png") center/contain no-repeat;
+}
+
+/* ===========================
+   RIGHT: ORDER SUMMARY
+=========================== */
+
+.order-summary-card {
+  flex: 1.2;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #d2d2d2;
+}
+
+.order-summary-card h3 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.place-order-btn {
+  width: 60%;
+  padding: 8px;
+  margin: 25px auto 0;
+  display: block;
+  text-align: center;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* ===========================
+   CONTINUE SHOPPING BUTTON
+=========================== */
+
+.continue-btn {
+  display: block;
+  margin: 50px auto 0;
+  padding: 12px 60px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 900px) {
+  .cart-content {
+    flex-direction: column;
+  }
+
+  .cart-header,
+  .cart-item {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+}

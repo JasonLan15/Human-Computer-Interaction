@@ -1,0 +1,19 @@
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 59%;
+}
+
+.hero-box {
+  background: rgb(78, 59, 49, 0.7);
+  padding: 30px;
+}
+
+.product-card-green {
+  background: rgb(82, 97, 63, 0.4);
+}
+
+.product-card-green button {
+  background: rgb(90, 104, 71);
+}

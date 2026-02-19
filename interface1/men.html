@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSTMLabs - Men</title>
+
+  <link rel="stylesheet" href="styles/shared/general.css" />
+  <link rel="stylesheet" href="styles/pages/men.css" />
+</head>
+
+<body>
+  <div class="page-container">
+
+    <header>
+      <a href="home.html" class="logo">
+        <img src="images/assets/cstmLabLogo.png" alt="Simpson's Lab Logo" />
+      </a>
+
+      <div class="search-cart">
+        <div class="search-wrapper">
+          <input type="text" class="search-input" placeholder="Search" />
+          <button class="search-btn"></button>
+        </div>
+
+        <a href="checkout.html" class="cart-wrapper">
+          <span class="cart-icon-animation cart-icon"></span>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </header>
+
+    <section class="divider"></section>
+
+    <nav class="main-nav">
+      <a href="men.html"><button class="nav-button-hover">MEN</button></a>
+      <a href="women.html"><button class="nav-button-hover">WOMEN</button></a>
+      <a href="children.html"><button class="nav-button-hover">CHILDREN</button></a>
+    </nav>
+
+    <section class="divider"></section>
+
+    <section class="filters">
+
+      <div class="filter-dropdown" data-filter="style">
+        <span class="filter-label">Style</span>
+        <div class="filter-menu">
+          <div data-value="Embroidery">Embroidery</div>
+          <div data-value="Print">Print</div>
+        </div>
+      </div>
+
+      <div class="filter-dropdown" data-filter="category">
+        <span class="filter-label">Category</span>
+        <div class="filter-menu">
+          <div data-value="Sweatshirt">Sweatshirts</div>
+          <div data-value="Tshirt">T-Shirts</div>
+        </div>
+      </div>
+
+      <div class="filter-dropdown" data-filter="size">
+        <span class="filter-label">Size</span>
+        <div class="filter-menu filter-label-size">
+          <div data-value="XS">XS</div>
+          <div data-value="S">S</div>
+          <div data-value="M">M</div>
+          <div data-value="L">L</div>
+          <div data-value="XL">XL</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="active-filters js-active-filters"></div>
+
+    <section class="hero-section">
+      <p class="hero-title">Latest</p>
+
+      <section class="hero">
+        <img src="images/men/banner/spruceBanner.jpg" alt="Hero Banner" />
+        <div class="hero-box">
+          <div class="hero-box-title-text">Latest In</div>
+          <div class="hero-box-text">
+            Get ready for a warm and joyful Christmas with our new Christmas Themed Prints!
+          </div>
+          <button class="hero-browse-btn">Browse</button>
+        </div>
+      </section>
+    </section>
+
+    <section class="products-section">
+      <p class="products-title">Browse the collection</p>
+      <section class="products js-products"></section>
+    </section>
+
+  </div>
+
+  <script type="module" src="scripts/men.js"></script>
+</body>
+
+</html>

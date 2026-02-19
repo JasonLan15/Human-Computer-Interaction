@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ===============================
+   GLOBAL LAYOUT
+=============================== */
+
+body {
+  background: white;
+  color: #333;
+  font-family: 'Nunito', sans-serif;
+}
+
+.page-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+/* ========================================
+   HERO BANNER — CAROUSEL
+======================================== */
+
+.hero-banner {
+  width: 100%;
+  height: 360px;
+  border-radius: 24px;
+  overflow: hidden;
+  margin: 40px auto;
+  position: relative;
+  background: #e8e8e8;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  height: 100%;
+  transition: transform 0.7s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Banner 3 special styling */
+.banner-three img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Fills the entire carousel */
+  object-position: center;
+  filter: brightness(0.35);
+}
+
+/* Centered text overlay */
+.banner-three-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  width: 80%;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 1px;
+}
+
+/* ARROWS */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.2s ease;
+  z-index: 10;
+}
+
+.carousel-btn:hover {
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.prev {
+  left: 15px;
+}
+
+.next {
+  right: 15px;
+}
+
+/* DOTS */
+.carousel-dots {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.carousel-dots span {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.carousel-dots .active {
+  background: white;
+  transform: scale(1.2);
+}
+
+
+/* ========================================
+   SECTION TITLE
+======================================== */
+
+.section-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 70px;
+  margin-bottom: 60px;
+  font-family: 'Inter', sans-serif;
+}
+
+
+/* ========================================
+   GRID LAYOUT (OUR LATEST)
+======================================== */
+
+.latest-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+  row-gap: 80px;
+  margin-bottom: 60px;
+  align-items: stretch;
+}
+
+
+/* IMAGE BLOCKS */
+.latest-grid .img-block {
+  width: 96%;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: #e8e8e8;
+  overflow: hidden;
+}
+
+.img-block img {
+  width: 60%;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.img-block-women img {
+  width: 130%;
+  height: 130%;
+  transform: translateX(-60px);
+}
+
+.img-block-men img {
+  width: 150%;
+  height: 150%;
+  transform: translateX(-85px) translateY(-130px);
+}
+
+.img-block-children img {
+  width: 180%;
+  height: 180%;
+  transform: translateX(-240px) translateY(-225px);
+}
+
+
+/* TEXT BLOCKS */
+.latest-grid .text-block {
+  width: 92%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  line-height: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 300px;
+}
+
+.text-block h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  font-family: 'Inter', sans-serif;
+}
+
+.text-block p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+
+/* BROWSE BUTTON */
+.browse-btn {
+  margin-top: auto;
+  align-self: center;
+  padding: 10px 28px;
+  background: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  transition: 0.2s ease;
+}
+
+.browse-btn:hover {
+  transform: scale(1.07);
+  background: #000;
+}
+
+
+/* ========================================
+   CTA BUTTON
+======================================== */
+
+.cta-center {
+  text-align: center;
+  margin: 40px 0 70px;
+}
+
+.cta-btn {
+  padding: 12px 40px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+}
+
+.cta-btn:hover {
+  transform: scale(1.08);
+}
+
+
+/* ========================================
+   FOOTER — IMPROVED
+======================================== */
+
+.footer-box {
+  width: 100%;
+  margin-top: 5%;
+  padding: 20px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  border-radius: 22px;
+  border: 2px solid #d3d3d3;
+  margin-bottom: 60px;
+}
+
+.footer-box h4 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Rows */
+.footer-box .contact-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 8px 0px;
+}
+
+/* Icon sizes */
+.footer-box .contact-row img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  opacity: 0.9;
+}
+
+/* Link styling */
+.footer-box a {
+  color: #222;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer-box a:hover {
+  opacity: 0.7;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 900px) {
+  .latest-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .hero-banner {
+    height: 280px;
+  }
+
+  .text-block {
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-banner {
+    height: 230px;
+  }
+
+  .cta-btn {
+    padding: 10px 30px;
+  }
+
+  .banner-three-text {
+    font-size: 22px;
+    width: 90%;
+  }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>CSTMLabs - Product</title>
+
+  <!-- Shared general styles -->
+  <link rel="stylesheet" href="styles/shared/general.css" />
+
+  <!-- Product-view specific styles -->
+  <link rel="stylesheet" href="styles/pages/product-view.css" />
+</head>
+
+<body>
+  <div class="page-container">
+
+    <!-- HEADER -->
+    <header>
+      <a href="home.html" class="logo">
+        <img src="images/assets/cstmLabLogo.png" alt="Simpson's Lab Logo" />
+      </a>
+
+      <div class="search-cart">
+        <div class="search-wrapper">
+          <input type="text" class="search-input" placeholder="Search" />
+          <button class="search-btn"></button>
+        </div>
+
+        <a href="checkout.html" class="cart-wrapper">
+          <span class="cart-icon-animation cart-icon"></span>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </header>
+
+    <section class="divider"></section>
+
+    <!-- NAV -->
+    <nav class="main-nav">
+      <a href="men.html"><button class="nav-button-hover">MEN</button></a>
+      <a href="women.html"><button class="nav-button-hover">WOMEN</button></a>
+      <a href="children.html"><button class="nav-button-hover">CHILDREN</button></a>
+    </nav>
+
+    <section class="divider"></section>
+
+    <!-- PRODUCT VIEW -->
+    <section class="product-view">
+      <p class="breadcrumb js-breadcrumb"></p>
+
+      <div class="product-layout js-product-view">
+        <!-- JS injects product gallery + info here -->
+      </div>
+    </section>
+
+    <button class="continue-btn js-continue">Continue Shopping</button>
+
+  </div>
+
+  <script type="module" src="scripts/product-view.js"></script>
+</body>
+
+</html>
