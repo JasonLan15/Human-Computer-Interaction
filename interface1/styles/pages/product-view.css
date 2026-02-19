@@ -1,0 +1,272 @@
+/* ===== PAGE STRUCTURE ===== */
+.product-view {
+  padding: 20px 0;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* ===== LAYOUT ===== */
+.product-layout {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  justify-content: flex-start;
+  /* ⬅️ was space-between */
+  gap: 12%;
+  /* controls spacing between gallery + info */
+}
+
+
+/* ===== IMAGE + THUMBNAILS ===== */
+.gallery-section {
+  display: flex;
+  margin-top: 15px;
+  margin-left: 3%;
+  gap: 20px;
+}
+
+.main-image {
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.thumbnail-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.thumb {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.active-thumb {
+  border: 2px solid black;
+}
+
+/* ===== PRODUCT INFO ===== */
+.product-info {
+  width: 525px;
+}
+
+.product-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.stars {
+  color: gold;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.product-price {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 28px 0;
+  /* FIXED — matches screenshot spacing */
+}
+
+/* ===== COLOUR + QUANTITY ROW ===== */
+.info-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 125px;
+  /* FIXED spacing */
+  margin-bottom: 25px;
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Colours */
+.colour-options {
+  display: flex;
+  gap: 14px;
+  margin-top: 6px;
+}
+
+.colour-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #999;
+}
+
+.beige {
+  background: #d6c9b4;
+}
+
+.cream {
+  background: #ebe7ca;
+}
+
+/* Quantity */
+.qty-block {
+  margin-top: 0;
+  margin-left: 80px;
+}
+
+.qty-box {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.qty-box button {
+  width: 22px;
+  height: 22px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+  line-height: 0;
+  /* FIXES vertical alignment */
+  padding: 0;
+}
+
+
+/* ===== SIZES ===== */
+.size-label {
+  margin-bottom: 10px;
+}
+
+.size-options {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 34px;
+}
+
+.size {
+  padding: 6px 14px;
+  border: 1px solid black;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.size:hover {
+  transform: scale(1.1);
+  font-weight: bolder;
+}
+
+/* ===== BUTTON ROW ===== */
+.button-row {
+  display: flex;
+  justify-content: left;
+  /* 🔥 Centers the buttons */
+  gap: 30px;
+  /* Space between them */
+  width: 100%;
+  /* Makes the row full width */
+  margin: 20px 0;
+}
+
+
+.buy-now {
+  background: black;
+  color: white;
+  padding: 12px 70px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.add-cart {
+  background: transparent;
+  padding: 12px 70px;
+  border-radius: 25px;
+  border: 2px solid black;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* ===== DETAILS / REVIEWS ===== */
+.details-block {
+  margin-top: 40px;
+  padding-top: 25px;
+}
+
+.tabs {
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.tab {
+  color: #777;
+  cursor: pointer;
+}
+
+.active-tab {
+  font-weight: 700;
+  text-decoration: underline;
+  color: black;
+}
+
+.review-heading {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 18px;
+}
+
+.review-card {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.avatar {
+  width: 50px;
+  height: 38px;
+}
+
+.review-stars {
+  color: gold;
+  margin: 4px 0;
+}
+
+.review-text {
+  margin-bottom: 20px;
+}
+
+.continue-btn {
+  display: block;
+  width: 260px;
+  margin: auto;
+  text-align: center;
+  padding: 12px;
+  background: black;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 15px;
+}

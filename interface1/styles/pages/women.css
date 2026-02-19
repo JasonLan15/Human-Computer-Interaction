@@ -1,0 +1,22 @@
+/* women.css - page-specific styles only */
+
+/* Remove all global styles since they now exist in general.css */
+
+/* PAGE-SPECIFIC OVERRIDES OR ADDITIONS */
+
+/* Adjust hero image position uniquely for women page */
+.hero img {
+  object-position: center -150px;
+}
+
+/* If women page has special hero box styling */
+.hero-box {
+  background: rgba(42, 23, 25, 0.6);
+}
+
+/* Optional: specific card adjustment for product 3 */
+.product-card-3 img {
+  object-position: center -40px;
+}
+
+/* Add any unique women-section stylings here */

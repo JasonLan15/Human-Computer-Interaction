@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>CSTMLabs - Checkout</title>
+
+  <link rel="stylesheet" href="styles/shared/general.css" />
+  <link rel="stylesheet" href="styles/pages/checkout.css" />
+</head>
+
+<body>
+  <div class="page-container">
+
+    <header>
+      <a href="home.html" class="logo">
+        <img src="images/assets/cstmLabLogo.png" alt="Simpson's Lab Logo" />
+      </a>
+
+      <div class="search-cart">
+        <div class="search-wrapper">
+          <input type="text" class="search-input" placeholder="Search" />
+          <button class="search-btn"></button>
+        </div>
+
+        <a href="checkout.html" class="cart-wrapper">
+          <span class="cart-icon-animation cart-icon"></span>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </header>
+
+    <section class="divider"></section>
+
+    <nav class="main-nav">
+      <a href="men.html"><button class="nav-button-hover">MEN</button></a>
+      <a href="women.html"><button class="nav-button-hover">WOMEN</button></a>
+      <a href="children.html"><button class="nav-button-hover">CHILDREN</button></a>
+    </nav>
+
+    <section class="divider"></section>
+
+    <section class="cart-container">
+      <h2>Your Cart</h2>
+
+      <div class="cart-content">
+        <div class="cart-items-card">
+          <div class="cart-header">
+            <span>Products</span>
+            <span>Quantity</span>
+            <span>Price</span>
+            <span>Action</span>
+          </div>
+
+          <div class="js-cart-items"></div>
+        </div>
+
+        <div class="order-summary-card">
+          <h3>Order Summary</h3>
+
+          <div class="summary-row">
+            <span class="js-items-count-label">Items (0):</span>
+            <span class="js-items-count-price">£0.00</span>
+          </div>
+
+          <div class="summary-row">
+            <span>Subtotal:</span>
+            <span class="js-subtotal">£0.00</span>
+          </div>
+
+          <div class="summary-row">
+            <span>Packaging:</span>
+            <span class="js-packaging">£0.00</span>
+          </div>
+
+          <div class="summary-row">
+            <span>Delivery Charges:</span>
+            <span class="js-delivery">£0.00</span>
+          </div>
+
+          <hr />
+
+          <div class="summary-row total">
+            <span>Total:</span>
+            <span class="js-total">£0.00</span>
+          </div>
+
+          <button class="place-order-btn">Place Order</button>
+        </div>
+      </div>
+
+      <button class="continue-btn">Continue Shopping</button>
+    </section>
+  </div>
+
+  <script type="module" src="scripts/checkout.js"></script>
+</body>
+
+</html>
